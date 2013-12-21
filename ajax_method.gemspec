@@ -7,15 +7,17 @@ require "ajax_method/version"
 Gem::Specification.new do |s|
   s.name        = "ajax_method"
   s.version     = AjaxMethod::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of AjaxMethod."
-  s.description = "TODO: Description of AjaxMethod."
+  s.authors     = ["Takashi Kokubun"]
+  s.email       = ["takashikkbn@gmail.com"]
+  s.homepage    = "https://github.com/tkkbn/ajax_method"
+  s.summary     = "Rails plugin to render partial view by ajax"
+  s.description = "Rails plugin to render partial view by ajax"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "~> 4.0.2"
 
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "rspec-rails"
 end
