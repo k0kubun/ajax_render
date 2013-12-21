@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = "Rails plugin to render partial view by ajax"
   s.description = "Rails plugin to render partial view by ajax"
 
-  s.files         = Dir["{lib, vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files         = Dir["{lib, vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files    = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 4.0.0"
