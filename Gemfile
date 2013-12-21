@@ -1,14 +1,21 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# Declare your gem's dependencies in ajax_method.gemspec.
-# Bundler will treat runtime dependencies like base dependencies, and
-# development dependencies will be added by default to the :development group.
 gemspec
 
-# Declare any dependencies that are still in development here instead of in
-# your gemspec. These might include edge Rails or gems from your path or
-# Git. Remember to move these dependencies to your gemspec before releasing
-# your gem to rubygems.org.
+group :development, :test, :production do
+  gem 'jquery-rails'
+  gem 'quiet_assets'
+  gem 'rails', '>= 4.0.0'
+  gem 'sqlite3'
+  gem 'haml-rails'
+end
 
-# To use debugger
-# gem 'debugger'
+group :test do
+  gem 'rspec-rails', '2.14.0'
+end
+
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+end

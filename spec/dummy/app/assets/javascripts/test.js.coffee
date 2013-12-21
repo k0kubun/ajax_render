@@ -1,0 +1,2 @@
+jQuery ($) ->
+  $.post('/test/ajax')
